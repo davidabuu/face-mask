@@ -35,7 +35,7 @@ function setup() {
   flippedVideo = ml5.flipImage(video)
   // Start classifying
   classifyVideo();
-  whoFunction();
+
 }
 
 function draw() {
@@ -70,10 +70,3 @@ function gotResult(error, results) {
   classifyVideo();
 }
 
-function whoFunction() {
-  var x = document.createElement("IFRAME");
-  x.setAttribute("src", "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks");
-  x.style.width = '640px';
-  x.style.height = '520'
-  document.body.appendChild(x);
-}
